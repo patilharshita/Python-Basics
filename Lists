@@ -1,0 +1,42 @@
+#Lets break down
+
+What is a List? # I know we are tired of reading a definition :P
+Type: Complex Data Type
+# words to remember before programming list use cases
+An ordered sequence of elements [basic data types and complex data types]
+
+What is list comprehension?
+Its the most concise way to create lists... Meaning,
+# format or syntax
+(Brackets + expression) followed by 'for' loop followed by 'If' Clause #words to remember 
+
+Examples:
+#1
+('Hello, ' + x) for x in ['Patil Harshita','Jim','Tom,'Teddy']
+Output: ['Hello, Patil Harshita','Hello, Jim','Hello, Tom','Hello, Teddy'] # Please undertand using the syntax mentioned above and map it to the example for its usage
+#2
+[x * y for x in range(3) for y in range(3) if x>y] 
+Output: [0, 0, 2]
+
+what are List functions?
+
+Adding elements to a list with append, insert, or list concatenation.
+The append operation is the fastest.	[1, 2, 2].append(4) # [1, 2, 2, 4]
+[1, 2, 4].insert(2,2) # [1, 2, 2, 4]
+[1, 2, 2] + [4] # [1, 2, 2, 4]
+
+#Removing elements is slower (find it first).	
+ Ex: [1, 2, 2, 4].remove(1) # [2, 2, 4]
+
+#Reversing the order of elements.	
+ Ex: [1, 2, 3].reverse() # [3, 2, 1]
+ 
+#Sorting a list
+Slow for large lists: O(nlog n) and n list elements.	
+  Ex: [2, 4, 2].sort() # [2, 2, 4]
+
+Indexing
+Finds the index of the first occurrence of an element in the list. It is slow when traversing the whole list.	
+  Ex: [2, 2, 4].index(2) # index of element 4 is “2”
+  Ex:[2 , 2, 4].index(2,1) #index of element 2 after pos 1 is “1”
+
