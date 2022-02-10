@@ -1,0 +1,27 @@
+#Disclaimer - You will only see what needs to be seen and learned :P I know its funny, unlike, the most learning sites out there..
+What is a Dictionary?
+DS which stores keys and values
+Def: A Data structure useful to store (keys,values) pair.
+
+Example:
+  Names = {
+            'tom': 52,
+            'tim': 76,
+            'jim': 89          
+          
+          }
+
+Let's disect the dictionaries. We spoke about keys and values--- How do we access them in a dictionary?
+Names.keys() #dict_keys(['tom','tim','jim'])
+Names.values()
+# Please homework on what datatype it returns and how to store the result.
+--------------------------------------------------------------------------------------------------------------------------------
+#Dictionary looping
+
+Notes: items is the method we use to iterate through the objects in dictionary
+dict_items([('tom': 52),
+            ('tim': 76),
+            ('jim': 89)])
+            
+for k,v in Names.items()
+  print(k) if v> 70 else None
