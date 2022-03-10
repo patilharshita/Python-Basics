@@ -1,0 +1,30 @@
+#extra tips and tricks using functions
+
+Map function:
+Syntax #1: map(func, iter)
+Syntax #2: map(func,i1,i2,i3.....ik)
+
+Example of syntax #1
+list[map(lambda x: x[0],['red', 'white','black'])]
+  returns ['r','w','b']
+  
+Example of syntax #2
+list[map(lambda x: str(x) + ' '+ y + 's',[0,1,2],['red','white','black'])]
+  returns ['0 reds','1 whites','2 blacks']
+  
+  --------------------------------------------------------------
+String functions
+
+join() ::: It concatenates iterable elements separated by a string.
+Syntax: string.join(iter)
+*Example*
+'In the'.join(list['Alice','Wonderland'])
+ RESULT: Alice In the Wonderland
+ 
+strip()::: Removes leading and trailing whitespaces of string.
+Syntax: string.strip()
+*Example*
+ print('   45   '.strip())
+    RESULT: 45
+
+ 
